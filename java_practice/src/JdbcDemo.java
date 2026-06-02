@@ -13,7 +13,7 @@ public class JdbcDemo
 
         // Database login credentials
         String username = "root";
-        String password = "1234";
+        String password = "SAI123kum@r456";
 
         // Step 1: Establish connection with database
         Connection con =
