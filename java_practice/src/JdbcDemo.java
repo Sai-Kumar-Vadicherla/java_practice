@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class JdbcDemo
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args) 
     {
 
         try{
@@ -47,5 +47,7 @@ public class JdbcDemo
         databaseConnection.close();
         }catch(Exception e){
             System.out.println(e);
+        }
     }
 }
+    
