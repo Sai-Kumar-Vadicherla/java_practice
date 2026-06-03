@@ -5,6 +5,8 @@ public class JdbcDemo
 {
     public static void main(String[] args) throws Exception
     {
+
+        try{
         // URL tells where database is located
         // jdbc:mysql → driver type
         // localhost:3306 → server + port
@@ -16,32 +18,34 @@ public class JdbcDemo
         String password = "SAI123kum@r456";
 
         // Step 1: Establish connection with database
-        Connection con =
+        Connection databaseConnection =
                 DriverManager.getConnection(url, username, password);
 
         // Step 2: Create statement object to send SQL query
-        Statement st = con.createStatement();
+        Statement studentStatement = databaseConnection.createStatement();
 
         // Step 3: SQL query (fetch all records from student table)
         String sql = "SELECT * FROM student";
 
         // Step 4: Execute query and store result in ResultSet
-        ResultSet rs = st.executeQuery(sql);
+        ResultSet studentResultSet = studentStatement.executeQuery(sql);
 
         // Step 5: Read data row by row using while loop
-        while(rs.next())
+        while(studentResultSet.next())
         {
             // Get values from each column of current row
-            int id = rs.getInt("id");
-            String name = rs.getString("name");
+            int id = studentResultSet.getInt("id");
+            String name = studentResultSet.getString("name");
 
             // Print data
             System.out.println(id + " " + name);
         }
 
         // Step 6: Close all connections (important for memory)
-        rs.close();
-        st.close();
-        con.close();
+        studentResultSet.close();
+        studentStatement.close();
+        databaseConnection.close();
+        }catch(Exception e){
+            System.out.println(e);
     }
 }
