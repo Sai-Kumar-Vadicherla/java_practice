@@ -1,5 +1,5 @@
 
-class ReversingString_Problem_1 {
+class ReversingString_Problem_One {
     public static void main(String[] args) {
  
         
