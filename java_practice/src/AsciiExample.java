@@ -10,6 +10,7 @@ public class AsciiExample {
         
         char c = 97;
         
-        
+        System.out.println(c);
+         System.out.println(c);
     }
 }
