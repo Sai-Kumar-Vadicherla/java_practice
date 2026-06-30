@@ -7,7 +7,11 @@ class Stream_API_in_Java {
         
         List<Integer> data = Arrays.asList(4,5,9,1,3,2,6);
         
-        Stream<Integer> stream = data.stream();
+        /*Stream<Integer> stream =  //we w=even dont need this*/ data.stream().map(n->n*2).sorted().forEach(n->System.out.println(n));   // video time 13:47
+        
+        /* We dont need all these because we can do all these in  line*///Stream<Integer> mappedStream = stream.map(n->n*2) ;  // map returns a new stream
+        
+       // mappedStream.forEach(n->System.out.println(n));
          
      //    Stream<Integer> sort = stream.sorted(); //this returns a stream
      /*    long count = stream.count(); */
