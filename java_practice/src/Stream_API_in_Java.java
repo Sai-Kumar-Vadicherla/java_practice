@@ -1,6 +1,21 @@
 import java.util.*;
 import java.util.stream.*;
 
+/*
+ - In Java Streams, filter() is an intermediate operation in the stream pipeline.
+ - It contains a condition (Predicate) and returns a new Stream.
+ - filter() is a lazy operation, so it is executed only when a terminal operation is invoked.
+
+ - Terminal operations:
+   - forEach()
+   - collect()
+   - count()
+   - reduce()
+   - findFirst()
+   - anyMatch()
+   - toArray()
+*/
+
 class Stream_API_in_Java {
     public static void main(String[] args) {
 
