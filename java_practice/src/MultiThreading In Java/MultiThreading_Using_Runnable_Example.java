@@ -12,7 +12,7 @@ class B implements Runnable{
         }
     }
 }
-class Main {
+class MultiThreading_Using_Runnable_Example {
     public static void main(String[] args) {
 
           A obj1 = new A();
