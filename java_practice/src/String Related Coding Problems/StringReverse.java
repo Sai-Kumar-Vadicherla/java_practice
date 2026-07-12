@@ -14,7 +14,7 @@ public class StringReverse {
             RS = RS + name.charAt(i);
         }
         
-        System.out.println(RS);
+        System.out.println(RS);;;
 
            /*  
                              String name = "saikumar";
