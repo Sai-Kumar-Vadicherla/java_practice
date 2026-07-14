@@ -1,5 +1,5 @@
 /*
-StringBuilder      tyfjgfhjghjffjgfh
+StringBuilder
 
 Definition:
 - StringBuilder is a mutable sequence of characters.
